@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
+import Column from './column';
 
-export default function board() {
+export default function Board() {
     const [completed, setCompleted] = useState([]);
     const [incomplete, setIncomplete] = useState([]);
 
@@ -18,6 +19,8 @@ export default function board() {
                 flexDirection: 'row'
             }}
         >
+
+            <Column title={"To Do"} tasks={incomplete} id={1} />
 
         </div>
     </DragDropContext>
