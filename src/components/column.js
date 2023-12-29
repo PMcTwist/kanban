@@ -1,6 +1,8 @@
 import React from 'react';
 import { Droppable } from 'react-beautiful-dnd';
 import styled from 'styled-components';
+
+import Task from './task';
 import '../css/scroll.css'
 
 
@@ -44,7 +46,10 @@ export default function Column({title, tasks, id}) {
                     {...provided.droppableProps}
                     isDraggingOver={snapshot.isDraggingOver}
                 >
-                    {/*Provide tasks*/}
+                    <Task
+                        task={{ id:69, title: 'finish app build' }}
+                        index={1}
+                    />
 
                     {provided.placeholder}
                 </TaskList>
