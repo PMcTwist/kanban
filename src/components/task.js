@@ -1,6 +1,7 @@
 import React from 'react';
 import { Draggable } from 'react-beautiful-dnd';
 import styled from 'styled-components';
+import { Avatar } from "antd";
 
 const Container = styled.div`
     border-radius: 10px;
@@ -86,6 +87,7 @@ export default function Task({task, index}) {
                         />
                     </div>
                 </Icons>
+                {provided.placeholder}
             </Container>
 
         )}
