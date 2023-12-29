@@ -11,12 +11,12 @@ export default function board() {
         <h2 style={{textAlign: 'center'}}>Kanban Board</h2>
 
         <div
-            style={
+            style={{
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
                 flexDirection: 'row'
-            }
+            }}
         >
 
         </div>
